@@ -1,0 +1,19 @@
+.state-alivrer {
+  color: #D32F2F;
+}
+
+.state-encours {
+  color: #FFC107;
+}
+
+.state-livree {
+  color: #4CAF50;
+}
+
+button {
+  color: white;
+  background-color: blue;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}

@@ -1,0 +1,5 @@
+<div class="layout wrap">
+  <ng-container *ngFor="let item of itemsService.collection">
+    <app-item [item]="item" class="flex xs12 text-xs-center py-3" (changedState)="changeState($event)"></app-item>
+  </ng-container>
+</div>

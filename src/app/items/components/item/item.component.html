@@ -1,0 +1,17 @@
+<h1 [appState]="item.state">{{ item.state }}</h1>
+
+<div class="py-2">#{{ item.id }} - Réf. {{ item.reference }} - {{ item.name }}</div>
+
+<div class="layout wrap justify-center">
+  <div class="flex xs4">
+    <div class="layout column">
+        <button class="flex mb-2" *ngIf="item.state !== stateHierarchy[stateHierarchy.length - 1]" (click)="goToNextState()">{{ nextState }}</button>
+        <mat-form-field class="flex">
+          <mat-select [(value)]="item.state" placeholder="État">
+            <mat-option *ngFor="let state of stateHierarchy" [value]="state">{{ state }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+  </div>
+
+</div>
